@@ -21,20 +21,36 @@
 }
 
 .logo-container {
-  height: 200px;
+  height: 160px;
+  animation: landing 2s;
+}
+
+.landing {
+  width: 150px;
+}
+
+.landing-1 {
+  transform: translate(10px 20px);
+  animation-duration: 2s;
 }
 
 .title {
   font-size: 40px;
+  animation: landing 2s;
 }
 
 .footer {
   font-weight: bold;
+  animation: landing 2s;
 }
 
 .btn {
   background-color: black !important;
   font-weight: bold !important;
+}
+
+.description {
+  animation: landing 2s;
 }
 
 @keyframes art {
@@ -43,5 +59,14 @@
 	}
 	to {
 		opacity: 0;
+	}
+}
+
+@keyframes landing {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }

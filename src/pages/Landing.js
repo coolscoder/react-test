@@ -6,9 +6,9 @@ const Landing = () => {
   return (
     <div>
       <div className="logo-container">
-        <img className={classNames('border mt-5 me-3 art')} src="./art.jpg" />
-        <img className={classNames('border me-3 art')} src="./art.jpg" />
-        <img className={classNames('border mt-5 art')} src="./art.jpg" />
+        <img className={classNames('border mt-5 me-5 landing landing-1')} src="./art.jpg" />
+        <img className={classNames('border me-5 landing')} src="./art.jpg" />
+        <img className={classNames('border mt-5 landing')} src="./art.jpg" />
       </div>
       <img className="mega" src="./mega.jpg" />
       <p className="title">ACHIEVEMENT UNLOCKED</p>
