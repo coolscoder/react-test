@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
+import { Button } from 'react-bootstrap'
 import './App.css';
 
-function App() {
+const App = () => {
+  const [animate, setAnimate] = useState(false)
+
+  const handleStart = () => {
+    setAnimate(true)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="d-flex mb-5">
+        <img className="border me-3 art art-1" src="./art.jpg" />
+        <img className="border me-3 art art-2" src="./art.jpg" />
+        <img className="border me-3 art art-3" src="./art.jpg" />
+      </div>
+      {!animate && <Button onClick={handleStart}>Send My Team</Button>}
     </div>
   );
 }
