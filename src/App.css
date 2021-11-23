@@ -10,14 +10,9 @@
   width: 200px;
 }
 
-.art-1 {
+.art-ani {
   animation: art 2s;
-}
-.art-2 {
-  animation: art 4s;
-}
-.art-3 {
-  animation: art 6s;
+  opacity: 0;
 }
 
 @keyframes art {
