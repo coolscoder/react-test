@@ -16,22 +16,24 @@
 }
 
 .art-ani {
-  animation: art 2s;
+  animation: art 1.5s;
   opacity: 0;
 }
 
 .logo-container {
   height: 160px;
-  animation: landing 2s;
+  animation: logo-container 2s;
+  margin: 50px 0;
 }
 
 .landing {
   width: 150px;
+  height: 150px;
 }
 
-.landing-1 {
-  transform: translate(10px 20px);
-  animation-duration: 2s;
+.landing-img {
+  margin: 0 10px;
+  animation: landing-img 2s;
 }
 
 .title {
@@ -42,6 +44,7 @@
 .footer {
   font-weight: bold;
   animation: landing 2s;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -68,5 +71,26 @@
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@keyframes logo-container {
+	from {
+    margin: 100px 0 0;
+		opacity: 0;
+	}
+	to {
+    margin-top: 50px;
+		opacity: 1;
+    margin-bottom: 50px;
+	}
+}
+
+@keyframes landing-img {
+	from {
+    margin: 0 50px;
+	}
+	to {
+    margin: 0 10px;
 	}
 }
